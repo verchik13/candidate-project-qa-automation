@@ -69,7 +69,7 @@
   
      Verify that patient doesn't have option Clinic Care and Chat Care
      
-  
+     
   
   
   ## Negative Test cases 
@@ -83,6 +83,9 @@
      And patient try to select past date June 20
   
      Verify that the past date is in read only mode
+  
+  2) 
+  
   
      
      
