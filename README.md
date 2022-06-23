@@ -25,21 +25,42 @@
      Then patient select date June 24
   
      Verify that patient should be able to see the list of doctors address information and the time options for appointment 
-     
-     
-  
-     
-  
-  
-  
-  
-  
+    
 
   3) Given patient Log in to ZoomCare or on Schedrul ZoomCare page
   
      When patient select my location Vienna, VA
   
      Then verify thta patient should see the message "We're not in your area yet—but we're growing almost as fast as we deliver care! Follow us on social to stay up-to-date on ZoomCare news, announcements and more. Want to see clinics outside of your region? Click below."
+  
+  4) Given patient Log in to ZoomCare or on Schedrul ZoomCare page
+  
+     When patient select my location Salem, OR
+  
+     Then patient select illness/injury from drop down menu
+      
+     And patient select available date from calendar 
+  
+     Then patient click View Clinic Servises 
+  
+     And patient should be able to see the list of Services available at this clinic
+  
+   5) Given patient Log in to ZoomCare or on Schedrul ZoomCare page
+  
+     When patient select my location Denver, CO
+  
+     Then patient select illness/injury from drop down menu
+      
+     And patient select available date from calendar 
+  
+     Then patient click View Clinic Servises 
+  
+     And patient should be able to see the list of Services available at this clinic
+  
+     Then patient click on the See More Details
+  
+     And verify that patient is able to see the list of cervices, doctors name and available time for making an appointment 
+     
   
   
   
