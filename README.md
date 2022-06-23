@@ -60,6 +60,14 @@
      Then patient click on the See More Details
   
      And verify that patient is able to see the list of cervices, doctors name and available time for making an appointment 
+  
+   6) Given patient Log in to ZoomCare or on Schedrul ZoomCare page
+  
+     When patient select my location Boise, ID
+      
+     Then patient select Adult Covid-19 Screening
+  
+     Verify that patient doesn't have option Clinic Care and Chat Care
      
   
   
