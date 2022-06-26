@@ -70,14 +70,19 @@
      Verify that patient doesn't have option Clinic Care and Chat Care
   
   7) Given patient Log in to ZoomCare or on Schedule ZoomCare
+  
       When patient click on Info | $
-      Then patient should be able to see a modal window with information about health           insurance and estimated cost
+  
+      Then patient should be able to see a modal window with information about health insurance and estimated cost
   
   note: Modal window should be dismissed by clicking on any area outside of modal window, so user experience will improve. Currently you able to close it only when you click again on Info | $ button.
   
   8) Given patient Log in to ZoomCare or on Schedule ZoomCare page
+  
     When patient select family medicine from drop down menu
+  
     And patient select available date from calendar
+  
     Then patient should be able to see the list of services available at this clinic on that particular day
      
      
@@ -96,11 +101,17 @@
      Verify that the past date is in read only mode
   
  
-  
+  </details>
   
      
-     
+    
 
 
 <details> <summary>Automation Instructions</summary>
+  Selenium, Java.
+  
+  1) 
+    // first we need to connect required libraries to work with selelium webdriver
+  
+  
   
