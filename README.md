@@ -133,6 +133,8 @@
     // now we need to initiate a chromedriver
     WebDriver driver = new ChromeDriver();
   
+  driver.manage().deleteAllCookies();
+  
     // now we need to maximize window of chrome browser
     driver.manage().window().maximize();
   
@@ -141,5 +143,11 @@
   
     
   1. To write an automation code for the test case #1 we will need to 
-  
+    
+    create a selenium WebDriver instance
+    configure browser if required
+    navigate to the required web page
+    locate the relevant web element
+    perform action on the web element
+    verify and validate the action
   
