@@ -220,7 +220,7 @@
        @Given("^Patient log in to ZoomCare or on Schedule ZoomCare page$")
   
        public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
-       ???? 
+      
   
        driver.get("http://zoomcare.com/schedule");
   
@@ -280,7 +280,7 @@
          @Given("^Patient log in to ZoomCare or on Schedule ZoomCare page$")
   
          public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
-         ???? 
+         
   
          driver.get("http://zoomcare.com/schedule");
   
