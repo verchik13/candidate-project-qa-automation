@@ -110,8 +110,33 @@
 <details> <summary>Automation Instructions</summary>
   Selenium, Java.
   
-  1) 
-    // first we need to connect required libraries to work with selelium webdriver
+  1) Eclipse 
   
+  Java JDK8
+  
+  Chrome
+  
+  Chrome driver
+    // first we need to connect required libraries to work with selelium webdriver
+    import org.openqa.selenium.WebDriver;
+    import org.openqa.selenium.chrome.ChromeDriver;
+    // then we need to create a class 
+    public class ZoomCareSchedule {
+    public static void main(String[] args) {
+  
+    // setting the driver executable, define a path to the chromedriver
+    System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
+  
+    // now we need to initiate a chromedriver
+    WebDriver driver = new ChromeDriver();
+  
+    // now we need to maximize window of chrome browser
+    driver.manage().window().maximize();
+  
+    // opening a web browser with specific url
+    driver.get("http://zoomcare.com/schedule");
+  
+    
+  1. To write an automation code for the test case #1 we will need to 
   
   
