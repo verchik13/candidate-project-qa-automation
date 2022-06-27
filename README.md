@@ -124,22 +124,31 @@
   I will use TestRunner to run the script.
   
     // first we need to connect required libraries to work with selelium webdriver
+  
     import org.openqa.selenium.WebDriver;
+  
     import org.openqa.selenium.chrome.ChromeDriver;
+  
     // then we need to create a class 
+  
     public class ZoomCareSchedule {
+  
     public static void main(String[] args) {
   
     // setting the driver executable, define a path to the chromedriver
+  
     System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
   
     // now we need to initiate a chromedriver
+  
     WebDriver driver = new ChromeDriver();
   
     // now we need to maximize window of chrome browser
+  
     driver.manage().window().maximize();
   
     // opening a web browser with specific url
+  
     driver.get("http://zoomcare.com/schedule");
   
     
@@ -154,34 +163,49 @@
   1st test case:
   
       @Given("^Patient log in to ZoomCare or on Schedule ZoomCare page$")
+  
       public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
       ??? driver.get("http://zoomcare.com/schedule");
   
       }
   
       @when("^a user selects portland and illness$")
+  
       public void a_user_select_portland_illness_june() throws Throwable {
+  
       //click to expand a location list
+  
       WebElement loc = driver.findElement(By.xpath("//*[@id="react-mount-page-    content"]/div/div/div/div[1]/div/div[1]/div/span"));
       loc.click();
+  
       //click on portland
+  
       WebElement p = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div[3]/div/div"));
       p.click()
   
       }
   
       @then("^patient selects illness injury from the drop menu$)
+  
       public void patient_selects_illness_injury() throws Throwable {
+  
       // click to expand list of services (illness/injury
+  
       WebElement d = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div/div/div/i"));
       d.click();
+  
       // click on illness_injury
+  
       WebElement ii = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[2]/div/div[2]/div/div/div/div[2]/div/div/div"));
       ii.click();
+  
       // click to expand dates
+  
       WebElement calen = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[3]/div/div/div[2]/div/i"));
       calen.click();
+  
       // click on June 23
+  
       WebElement date = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[3]/div/div[2]/div/div[4]/div[4]/div[5]/div/div"));
       date.click();
   
@@ -190,38 +214,52 @@
   2nd test case: 
   
        @Given("^Patient log in to ZoomCare or on Schedule ZoomCare page$")
+  
        public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
        ???? driver.get("http://zoomcare.com/schedule");
   
        }
   
        @when("^patient selects seattle$")
+  
        public void patient_selects_seattle() throws Throwable {
+  
         //click to expand a location list
+  
         WebElement loc = driver.findElement(By.xpath("//*[@id="react-mount-page-    content"]/div/div/div/div[1]/div/div[1]/div/span"));
         loc.click();
   
         //click on seattle
+  
         WebElement p = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div[4]/div/div"));
         p.click()
         
         }
         @then("^patient selects illness injury from the drop menu$)
+  
         public void patient_selects_illness_injury() throws Throwable {
+  
         // click to expand list of services (illness/injury
+  
         WebElement d = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div/div/div/i"));
         d.click();
+  
         // click on illness_injury
+  
         WebElement ii = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[2]/div/div[2]/div/div/div/div[2]/div/div/div"));
         ii.click();
+  
         // click on the VideoCare
+  
         WebElement vchat = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[2]/div/div[1]/button[2]"));
         
         // click to expand dates
+  
         WebElement calen = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[3]/div/div/div[2]/div/i"));
         calen.click();
         
         // click on June 24
+  
         WebElement datej = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[3]/div/div[2]/div/div[4]/div[4]/div[6]/div/div"));
   
   
@@ -229,25 +267,36 @@
   
         
          @Given("^Patient log in to ZoomCare or on Schedule ZoomCare page$")
+  
          public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
          ???? driver.get("http://zoomcare.com/schedule");
   
         }
   
          @When("^patient selects my location Vienna, VA$)
+  
          public void patient_selects_vienna() throws Throwable {
+  
          //click to expand a location list
+  
          WebElement loc = driver.findElement(By.xpath("//*[@id="react-mount-page-    content"]/div/div/div/div[1]/div/div[1]/div/span"));
          loc.click();
+  
          // send key Vienna VA USA
+  
          WebElement locat = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[2]/div/div[1]/input"));
         loxat.sendKeys("Vienna VA");
         
          // not sure how select from the suggestion shown
+  
         List<WebElement> autoSuggestions = driver.findElement ???
+  
         for (WebElement suggestions : autoSuggestions) {
+  
             if (suggestions.getText().contains("Vienna VA)) {
+  
                 suggestions.click();
+  
                 break;
           }
         }
