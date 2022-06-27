@@ -153,47 +153,47 @@
   
   1st test case:
   
-  @Given("^Patient log in to ZoomCare or on Schedule ZoomCare page$")
-  public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
-    ???? driver.get("http://zoomcare.com/schedule");
+      @Given("^Patient log in to ZoomCare or on Schedule ZoomCare page$")
+      public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
+      ??? driver.get("http://zoomcare.com/schedule");
   
-  }
+      }
   
-  @when("^a user selects portland and illness$")
-  public void a_user_select_portland_illness_june() throws Throwable {
-        //click to expand a location list
-        WebElement loc = driver.findElement(By.xpath("//*[@id="react-mount-page-    content"]/div/div/div/div[1]/div/div[1]/div/span"));
-        loc.click();
-        //click on portland
-        WebElement p = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div[3]/div/div"));
-        p.click()
+      @when("^a user selects portland and illness$")
+      public void a_user_select_portland_illness_june() throws Throwable {
+      //click to expand a location list
+      WebElement loc = driver.findElement(By.xpath("//*[@id="react-mount-page-    content"]/div/div/div/div[1]/div/div[1]/div/span"));
+      loc.click();
+      //click on portland
+      WebElement p = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div[3]/div/div"));
+      p.click()
   
-  }
+      }
   
-  @then("^patient selects illness injury from the drop menu$)
-  public void patient_selects_illness_injury() throws Throwable {
-        // click to expand list of services (illness/injury
-        WebElement d = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div/div/div/i"));
-        d.click();
-        // click on illness_injury
-        WebElement ii = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[2]/div/div[2]/div/div/div/div[2]/div/div/div"));
-        ii.click();
-        // click to expand dates
-        WebElement calen = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[3]/div/div/div[2]/div/i"));
-        calen.click();
-        // click on June 23
-         WebElement date = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[3]/div/div[2]/div/div[4]/div[4]/div[5]/div/div"));
-        date.click();
+      @then("^patient selects illness injury from the drop menu$)
+      public void patient_selects_illness_injury() throws Throwable {
+      // click to expand list of services (illness/injury
+      WebElement d = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div/div/div/i"));
+      d.click();
+      // click on illness_injury
+      WebElement ii = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[2]/div/div[2]/div/div/div/div[2]/div/div/div"));
+      ii.click();
+      // click to expand dates
+      WebElement calen = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[3]/div/div/div[2]/div/i"));
+      calen.click();
+      // click on June 23
+      WebElement date = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[3]/div/div[2]/div/div[4]/div[4]/div[5]/div/div"));
+      date.click();
   
-  }
+      }
   
   2nd test case: 
   
        @Given("^Patient log in to ZoomCare or on Schedule ZoomCare page$")
-  public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
-    ???? driver.get("http://zoomcare.com/schedule");
+       public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
+       ???? driver.get("http://zoomcare.com/schedule");
   
-  }
+       }
   
        @when("^patient selects seattle$")
        public void patient_selects_seattle() throws Throwable {
@@ -205,7 +205,7 @@
         WebElement p = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div[4]/div/div"));
         p.click()
         
-  }
+        }
         @then("^patient selects illness injury from the drop menu$)
         public void patient_selects_illness_injury() throws Throwable {
         // click to expand list of services (illness/injury
@@ -232,7 +232,7 @@
          public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
          ???? driver.get("http://zoomcare.com/schedule");
   
-  }
+        }
   
          @When("^patient selects my location Vienna, VA$)
          public void patient_selects_vienna() throws Throwable {
