@@ -108,6 +108,7 @@
 
 
 <details> <summary>Automation Instructions</summary>
+  
   Selenium, Java.
   
   1) Open Eclipse 
@@ -175,12 +176,14 @@
   
       //click to expand a location list
   
-      WebElement loc = driver.findElement(By.xpath("//*[@id="react-mount-page-    content"]/div/div/div/div[1]/div/div[1]/div/span"));
+      WebElement loc = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[1]/div/span"));
+  
       loc.click();
   
       //click on portland
   
       WebElement p = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div[3]/div/div"));
+  
       p.click()
   
       }
@@ -192,21 +195,25 @@
       // click to expand list of services (illness/injury
   
       WebElement d = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div/div/div/i"));
+  
       d.click();
   
       // click on illness_injury
   
       WebElement ii = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[2]/div/div[2]/div/div/div/div[2]/div/div/div"));
+  
       ii.click();
   
       // click to expand dates
   
       WebElement calen = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[3]/div/div/div[2]/div/i"));
+  
       calen.click();
   
       // click on June 23
   
       WebElement date = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[3]/div/div[2]/div/div[4]/div[4]/div[5]/div/div"));
+  
       date.click();
   
       }
@@ -216,7 +223,9 @@
        @Given("^Patient log in to ZoomCare or on Schedule ZoomCare page$")
   
        public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
-       ???? driver.get("http://zoomcare.com/schedule");
+       ???? 
+  
+  driver.get("http://zoomcare.com/schedule");
   
        }
   
@@ -227,11 +236,13 @@
         //click to expand a location list
   
         WebElement loc = driver.findElement(By.xpath("//*[@id="react-mount-page-    content"]/div/div/div/div[1]/div/div[1]/div/span"));
+  
         loc.click();
   
         //click on seattle
   
         WebElement p = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div[4]/div/div"));
+  
         p.click()
         
         }
@@ -242,11 +253,13 @@
         // click to expand list of services (illness/injury
   
         WebElement d = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[1]/div/div/div/i"));
+  
         d.click();
   
         // click on illness_injury
   
         WebElement ii = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[2]/div/div[2]/div/div/div/div[2]/div/div/div"));
+  
         ii.click();
   
         // click on the VideoCare
@@ -256,6 +269,7 @@
         // click to expand dates
   
         WebElement calen = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[3]/div/div/div[2]/div/i"));
+  
         calen.click();
         
         // click on June 24
@@ -269,7 +283,9 @@
          @Given("^Patient log in to ZoomCare or on Schedule ZoomCare page$")
   
          public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
-         ???? driver.get("http://zoomcare.com/schedule");
+         ???? 
+  
+  driver.get("http://zoomcare.com/schedule");
   
         }
   
@@ -280,11 +296,13 @@
          //click to expand a location list
   
          WebElement loc = driver.findElement(By.xpath("//*[@id="react-mount-page-    content"]/div/div/div/div[1]/div/div[1]/div/span"));
+  
          loc.click();
   
          // send key Vienna VA USA
   
          WebElement locat = driver.findElement(By.xpath("//*[@id="react-mount-page-content"]/div/div/div/div[1]/div/div[2]/div[2]/div/div[1]/input"));
+  
         loxat.sendKeys("Vienna VA");
         
          // not sure how select from the suggestion shown
