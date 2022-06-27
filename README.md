@@ -110,7 +110,10 @@
 <details> <summary>Automation Instructions</summary>
   Selenium, Java.
   
-  1) Eclipse 
+  1) Open Eclipse 
+  
+  Create Maven project
+ 
   
   Java JDK8
   
