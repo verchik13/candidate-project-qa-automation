@@ -155,20 +155,15 @@
     
   1. To write an automation code for the test case #1 we will need to locate all webElements and add to page object class
   
-  one file with step definitions
-  
-  public class StepDef {
-  
   NOTES:
   
   1st test case:
   
       @Given("^Patient log in to ZoomCare or on Schedule ZoomCare page$")
   
-      public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
-      ??? 
+      public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable { 
   
-  driver.get("http://zoomcare.com/schedule");
+      driver.get("http://zoomcare.com/schedule");
   
       }
   
@@ -227,7 +222,7 @@
        public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
        ???? 
   
-  driver.get("http://zoomcare.com/schedule");
+       driver.get("http://zoomcare.com/schedule");
   
        }
   
@@ -287,7 +282,7 @@
          public void patient_login_to_ZoomCare_or_on_Schedule_ZoomCare_page() throws Throwable {
          ???? 
   
-  driver.get("http://zoomcare.com/schedule");
+         driver.get("http://zoomcare.com/schedule");
   
         }
   
@@ -307,7 +302,7 @@
   
         loxat.sendKeys("Vienna VA");
         
-         // not sure how select from the suggestion shown
+        
   
         List<WebElement> autoSuggestions = driver.findElement ???
   
